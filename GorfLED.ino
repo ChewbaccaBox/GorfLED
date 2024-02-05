@@ -159,7 +159,7 @@ void loop() {
 
   // Lamp is on every time a shot is barreled. 
   // If lamp on, set in_game to 40. Otherwise count it down. Consider not in game if value is 0.
-  if(FrameCounter != curr_lamp){
+  if(FrameCounter != curr_lamp && FrameCounter > 5){
     in_game = 100;
   } else if (in_game > 0){
     in_game--;

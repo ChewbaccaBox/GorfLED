@@ -21,7 +21,7 @@ void modetest() {
   if (FrameCounter < 20) {
     loadFrame(framerouttest, false, 0);
   } else {
-    loadFrame(frametestmode, false, 0);
+    loadFrame(frametestmode_1, false, 0);
     if (FrameCounter % 50 < 10) {
       loadFrame(framefull, false, 0);
       videoCache[331] = bright_full;
